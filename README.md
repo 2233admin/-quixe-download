@@ -1,38 +1,33 @@
-用于从 quixel 添加所有项目的脚本
+Script to add all items from quixel
+As quixel is being removed, all items are free to aquire. This script is to automate the process to add items to your account (As of writing, a total of items)18874
 
-由于 quixel 正在被移除，因此所有项目都可以免费获取。此脚本用于自动执行将项目添加到帐户的过程（截至撰写本文时，项目总数）18874
+Note: This script only tested in the latest version of Chrome.
 
-注意：此脚本仅在最新版本的 Chrome 中进行了测试。
-
-如何使用
-从下面复制脚本 （run.js)
-登录 https://quixel.com
-前往 https://quixel.com/megascans/collections
-
-打开 devtools （F12） -> 转到“控制台”选项卡
-粘贴脚本并按 。Enter
-应弹出一个确认执行的对话框，单击“确定”
-坐下来等待
-常见问题
-收到 “Forbidden” 错误。（即使刷新后，整个页面也只显示 “禁止”）
-API 添加速度过快，您有可能达到 API 的速率限制。（我的测试大约在 10 页之后，所以 ~10k 项）。
-等待 ~10-20 分钟后，然后继续。请参阅在加载 https://quixel.com 后继续执行。Common Fixes -> Restart script
-脚本似乎已暂停/挂起
-这可能是太多的伐木。尝试监控脚本，如果它显示 “END PAGE X”，记下页码（以防需要重新启动），然后单击 devtools 中的 “🚫” 图标清除控制台。
-请参见修复。Common Fixes -> Restart script
-收到错误**UNABLE TO ADD ITEM**
-应该有 所示的错误消息。如果是 ，则它已在您的账户中。( )user already owns specified asset at a higher or equal resolution
-收到错误cannot find authentication token. Please login again
-清除浏览器 Cookie 并重新登录 quixel。尝试简单地手动添加 1 项。如果成功，请参阅 继续执行。Common Fixes -> Restart script
-常见修复
-重启脚本
-记下它正在运行的页面
-复制脚本run.js
-将第一行的 更新为 （假设第 10 页已挂起）startPage = 0startPage = 10
-更改日志
-初始脚本启动
-更新以清除日志以减少挂起的可能性
-[当前]跳过添加已获取的项目。减少日志。在脚本完成后添加了更多信息以显示购买的物品数量。由于现在跳过了购买的项目，因此从技术上讲，您不再需要指定 。
-
-
-
+How to use
+Copy the script from below (run.js)
+Login into https://quixel.com
+Go to https://quixel.com/megascans/collections
+Open devtools (F12) -> Go to "Console" tab
+Paste in the script and press .Enter
+A dialog should popup confirming the execution, click "OK"
+Sit back and wait
+Common issues
+Getting "Forbidden" error. (Even after refresh, the whole page just shows "Forbidden")
+There is a chance that the API adding too fast and you hit the rate limit of the API. (My testing is around after 10 pages, so ~10k items).
+Wait after ~10-20 minutes and continue. See to continue the execution after you can load https://quixel.com.Common Fixes -> Restart script
+The script seems to be paused/hang
+It could be too much logging going it. Try monitor the script, if it says "END PAGE X", note the page number down (in case need restart) and clear the console by clicking the "🚫" icon in devtools.
+See for fixing.Common Fixes -> Restart script
+Getting the error **UNABLE TO ADD ITEM**
+There should have the error message shown in . If it is , then its already in your account.( )user already owns specified asset at a higher or equal resolution
+Getting the error cannot find authentication token. Please login again
+Clear browser cookies and re-login quixel again. Try just simply add 1 item manully. If it success, then see for continue the execution.Common Fixes -> Restart script
+Common Fixes
+Restart Script
+Note which page it was running
+Copy the scriptrun.js
+Update the on the first line to (assuming page 10 was hanged)startPage = 0startPage = 10
+Change Log
+Initial Script launch
+Update to clear logs to reduce chance of hanging
+[CURRENT] Skip adding items that already was acquired. Reduced logs. Added more info after script completion to show purchased item count. Due to now skipping purchased items, you technically don't need to specify the anymore.startPage
