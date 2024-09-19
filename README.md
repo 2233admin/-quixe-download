@@ -1,4 +1,5 @@
 用于从 quixel 添加所有项目的脚本
+
 由于 quixel 正在被移除，因此所有项目都可以免费获取。此脚本用于自动执行将项目添加到帐户的过程（截至撰写本文时，项目总数）18874
 
 注意：此脚本仅在最新版本的 Chrome 中进行了测试。
@@ -7,6 +8,7 @@
 从下面复制脚本 （run.js)
 登录 https://quixel.com
 前往 https://quixel.com/megascans/collections
+
 打开 devtools （F12） -> 转到“控制台”选项卡
 粘贴脚本并按 。Enter
 应弹出一个确认执行的对话框，单击“确定”
